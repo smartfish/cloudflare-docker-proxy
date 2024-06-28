@@ -6,18 +6,14 @@ addEventListener("fetch", (event) => {
 const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
-  // production
-  "docker.yudongliang.xyz": dockerHub,
-  "quay.yudongliang.xyz": "https://quay.io",
-  "gcr.yudongliang.xyz": "https://gcr.io",
-  "k8s-gcr.yudongliang.xyz": "https://k8s.gcr.io",
-  "k8s.yudongliang.xyz": "https://registry.k8s.io",
-  "ghcr.yudongliang.xyz": "https://ghcr.io",
-  "cloudsmith.yudongliang.xyz": "https://docker.cloudsmith.io",
-  "ecr.yudongliang.xyz": "https://public.ecr.aws",
-
-  // staging
-  "docker-staging.yudongliang.xyz": dockerHub,
+  "docker-io.yudongliang.xyz": dockerHub,
+  "quay-io.yudongliang.xyz": "https://quay.io",
+  "gcr-io.yudongliang.xyz": "https://gcr.io",
+  "k8s-gcr-io.yudongliang.xyz": "https://k8s.gcr.io",
+  "k8s-io.yudongliang.xyz": "https://registry.k8s.io",
+  "ghcr-io.yudongliang.xyz": "https://ghcr.io",
+  "cloudsmith-io.yudongliang.xyz": "https://docker.cloudsmith.io",
+  "ecr-aws.yudongliang.xyz": "https://public.ecr.aws",
 };
 
 function routeByHosts(host) {
